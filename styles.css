@@ -1,34 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsalan Shariq - Analytics Expert</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Arsalan Shariq</h1>
-            <h2>Analytics Expert</h2>
-            <p>4 years of experience, 50+ clients served, 100+ Data Dashboards, Rated 4.9 on Upwork</p>
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <!-- Main content will be added here -->
-        </main>
-        <footer>
-            <!-- Footer content will be added here -->
-        </footer>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-</html>
+/* Reset some basic elements */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    padding: 40px 0;
+    background-color: #2b1b3a; /* Midnight purple */
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid #4c2a5a; /* Slightly lighter purple */
+    border-radius: 0 0 25px 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #b392ac; /* Soft purple */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+    background: #342044; /* Darker purple */
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b392ac; /* Soft purple */
+    background-color: transparent;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #4c2a5a;
+    transform: translateY(-5px);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #342044; /* Darker purple */
+    text-align: center;
+    color: #b392ac; /* Soft purple */
+    border-top: 5px solid #4c2a5a; /* Slightly lighter purple */
+}
+
+/* Additional global styles can be added here */
